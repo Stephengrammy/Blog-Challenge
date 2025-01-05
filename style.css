@@ -1,0 +1,96 @@
+body {
+    background-color:  hsl(47, 88%, 63%);
+}
+
+/*Parent Div the outer shell so i can style the bg within the body and also center it and make it responsive on all device screen */
+.main-container {
+    background-color: hsl(0, 0%, 100%);
+    width: 310px;
+    height: 480px;
+    border: 1px solid black;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 6px 5px 3px 1px rgba(
+        0, 0, 0, 0.9);
+}
+
+/*Child Div it is the inner shell that contains all my content this is where most of the work goes down  */
+.main-container >.sub-container {
+    width: 100%;
+    margin-left: 15px;
+    padding-top: 25px;
+    padding-bottom: 40px;
+    padding-left: px;
+    padding-right: 20px;
+}
+
+/* Image */
+.main-container > .sub-container > .logo > img {
+    width: 280px;
+    border-radius: 15px;
+    margin-top: 8px;
+    padding-top: 10px;
+    margin-left: 1px;
+}
+
+/*Header*/
+h3 {
+    font-family: "Figtree", serif;
+    font-size: 1.2em;
+    background-color: #f8e164;
+    width: 90px;
+    padding-left: 10px;
+    padding-right: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+
+/*Bio content*/
+.bio {
+    font-family: "Figtree", serif;
+    font-weight: 500;
+}
+
+/*link i used an A tag so that i add an hover state to it */
+a {
+    text-decoration: none;
+    color: black;
+    font-family: "Figtree", serif;
+    font-size: 1.3em;
+    font-weight: 800;
+    line-height: 10px;
+}
+
+/* Hover State*/
+a:hover {
+    cursor: pointer;
+    color: #f8e164;
+    
+}
+/*Paragraph text */
+.text {
+    font-family: "Figtree", serif;
+    font-weight: 350;
+    color: hsl(0, 0%, 42%);
+}
+
+/*Profile image and Name */
+.main-container > .sub-container > .profile > img {
+    width: 40px;
+    margin-right: 10px;
+    float: left;
+}
+
+span {
+    font-family: "Figtree", serif;
+    font-weight: 800;
+    margin-top: 10px;
+    float: left;
+}
